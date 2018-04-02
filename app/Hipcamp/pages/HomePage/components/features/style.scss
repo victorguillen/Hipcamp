@@ -2,12 +2,13 @@
 
 :local(.featuresContainer) {
   border-top: $border;
+  border-bottom: $border;
   display: flex;
   font-family: 'Calibre', Helvetica, Arial, sans-serif;
   justify-content: flex-start;
   margin: 30px auto 30px auto;
   max-width: 700px;
-  padding-top: 16px;
+  padding: 16px 0 16px 0;
 }
 
 :local(.sectionTitle) {
