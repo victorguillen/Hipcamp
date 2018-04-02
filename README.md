@@ -21,9 +21,9 @@ The `Camping Features` section includes all the features available in a camping 
 The project can be found under `app/Hipcamp` and I divided the project in 3 main folder:
 
 ```
-`pages`: HomePage that includes the <Features /> component.
-`shared`: constants, component/lib and images.
-`styles`: variables, mixins, etc.
+pages: HomePage that includes the <Features /> component.
+shared: constants, component/lib and images.
+styles: variables, mixins, etc.
 ```
 
 ## React Components
