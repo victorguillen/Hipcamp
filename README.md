@@ -2,7 +2,7 @@
 
 ## Camping Features
 
-The `Camping Features` section includes all the features available in a camping site, I added a little bit of color to make it clearer to the user whats available and whats not.  I also added the functionality of not only showing all the unavailable features but to also be able to hide them.
+The `Camping Features` section includes all the features available in a camping site, I added a little bit of color to make it clearer to the user whats available and whats not.  I also added the functionality of not only show all the unavailable features but to also hide them.
 
 <img src="docs/images/features.png" width="80%" height="80%">
 
@@ -21,9 +21,9 @@ The `Camping Features` section includes all the features available in a camping 
 The project can be found under `app/Hipcamp` and I divided the project in 3 main folder:
 
 ```
-pages: HomePage that includes the <Features /> component.
-shared: constants, component/lib and images.
-styles: variables, mixins, etc.
+`pages`: HomePage that includes the <Features /> component.
+`shared`: constants, component/lib and images.
+`styles`: variables, mixins, etc.
 ```
 
 ## React Components
@@ -38,7 +38,7 @@ icon: PropTypes.string,
 title: PropTypes.string,
 ```
 
-These 3 props we essential for showing wether the feature is available or not, the type of feature it is and the icon that represents it.
+These 3 props are essential for showing wether the feature is available or not, the type of feature it is and the icon that represents it.
 
 ```
 class IconContainer extends React.Component {
