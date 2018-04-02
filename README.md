@@ -1,8 +1,8 @@
 # Hipcamp
 
-[Camping Features Live][hipcamp]
+<img src="docs/images/features.png" width="400" height="200">
 
-[hipcamp]: https://victorguillen.github.io/Hipcamp/
+<img src="docs/images/all-features.png" width="400" height="200">
 
 <br />
 
