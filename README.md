@@ -8,8 +8,6 @@ The `Camping Features` section includes all the features available in a camping 
 
 <img src="docs/images/all-features.png" width="80%" height="80%">
 
-<br />
-
 ## Quick start
 
 1. Clone this repo using `git clone --depth=1 git@github.com:victorguillen/Hipcamp.git`
