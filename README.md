@@ -123,6 +123,6 @@ Stoiber. For more information see `LICENSE.md`.
 
 ## Side Notes
 
-It was a bit of a struggle to have to use `<ul>`'s and `<li>`'s, I'm used to structuring everything with `Flexbox` it super easy and its responsive!
+It was a bit of a personal struggle to have to use `<ul>`'s and `<li>`'s, I'm used to structuring everything with `Flexbox` its super easy and responsive! but thats just lack of experience and personal preference lol
 
 One of the subfeatures is a bit off, theres a bug with an `li`'s `display: inline, float: left` to make a horizontal list, the parent css class is overwriting it to be `display: inline-block` and couldn't get that fixed in time ... ugh
