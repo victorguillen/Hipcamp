@@ -104,8 +104,11 @@ With more time I would have added more mixins to create a responsive website.
 
 ## Quick start
 
-1. Clone this repo using `git clone --depth=1 https://github.com/react-boilerplate/react-boilerplate.git`
-2. Move to the appropriate directory: `cd react-boilerplate`.<br />
+1. Clone this repo using `git clone --depth=1 git@github.com:victorguillen/Hipcamp.git`
+2. Move to the appropriate directory: `cd Hipcamp`.<br />
+3. Run `npm run setup`.<br />
+4. Run `npm start`.<br />
+5. Go to `http://localhost:3000`.<br />
 
 ## React Boilerplate
 
@@ -114,8 +117,6 @@ I used this [React Boilerplate][react] for a quick start on building the Camping
 [react]: https://github.com/react-boilerplate/react-boilerplate
 
 <img src="https://raw.githubusercontent.com/react-boilerplate/react-boilerplate-brand/master/assets/banner-metal-optimized.jpg" alt="react boilerplate banner" align="center" />
-
-<br />
 
 ## License
 
