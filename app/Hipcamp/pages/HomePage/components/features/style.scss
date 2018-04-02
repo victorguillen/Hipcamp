@@ -1,0 +1,46 @@
+@import '../../../../styles/variables';
+
+:local(.featuresContainer) {
+  border-top: $border;
+  display: flex;
+  font-family: 'Calibre', Helvetica, Arial, sans-serif;
+  justify-content: flex-start;
+  margin: 30px auto 30px auto;
+  max-width: 700px;
+  padding-top: 16px;
+}
+
+:local(.sectionTitle) {
+  padding: 0 $spacing--small 0 $spacing--small;
+  width: 30%;
+}
+
+:local(.iconsContainer) {
+  display: flex;
+  flex-flow: column;
+  margin-left: $spacing--small;
+  padding: 0 25px 0 $spacing--small;
+  width: 70%;
+  ul {
+    columns: 2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  li {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+
+:local(.listContainer) {
+  min-height: 135px;
+}
+
+:local(.showHideLabel) {
+  cursor: pointer;
+  padding-left: $spacing--medium;
+  text-decoration: underline;
+  margin-right: auto;
+}

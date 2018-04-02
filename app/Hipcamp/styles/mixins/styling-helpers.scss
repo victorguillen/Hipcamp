@@ -1,0 +1,10 @@
+@mixin colorMarker($color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px $color;
+  background-color: $color;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}

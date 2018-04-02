@@ -4,6 +4,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // Remove this line once the following warning goes away (it was meant for webpack loader authors not users):
 // 'DeprecationWarning: loaderUtils.parseQuery() received a non-string value which can be problematic,
@@ -31,9 +32,20 @@ module.exports = (options) => ({
         // Preprocess our own .css files
         // This is the place to add your own loaders (e.g. sass/less etc.)
         // for a list of loaders, see https://webpack.js.org/loaders/#styling
-        test: /\.css$/,
+        test: /\.scss$/,
         exclude: /node_modules/,
-        use: ['style-loader', 'css-loader'],
+        use: ExtractTextPlugin.extract({
+          use: [
+            'style-loader',
+            {
+              loader: 'css-loader',
+              options: {
+                modules: true,
+              },
+            },
+            'sass-loader',
+          ],
+        }),
       },
       {
         // Preprocess 3rd party .css files located in node_modules
@@ -97,6 +109,7 @@ module.exports = (options) => ({
       },
     }),
     new webpack.NamedModulesPlugin(),
+    new ExtractTextPlugin('[name].css'),
   ]),
   resolve: {
     modules: ['app', 'node_modules'],
@@ -104,7 +117,15 @@ module.exports = (options) => ({
       '.js',
       '.jsx',
       '.react.js',
+      '.scss',
+      '.css',
+      '.json',
     ],
+    alias: {
+      pages: path.join(__dirname, 'Hipcamp/pages'),
+      shared: path.join(__dirname, 'Hipcamp/shared'),
+      styles: path.join(__dirname, 'Hipcamp/styles'),
+    },
     mainFields: [
       'browser',
       'jsnext:main',

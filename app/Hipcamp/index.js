@@ -14,8 +14,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import HomePage from 'containers/HomePage/Loadable';
-import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import HomePage from './pages/HomePage/Loadable';
+import NotFoundPage from './pages/NotFoundPage/Loadable';
 
 export default function App() {
   return (

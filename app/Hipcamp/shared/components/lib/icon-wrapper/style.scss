@@ -1,0 +1,31 @@
+@import '../../../../styles/variables';
+
+:local(.wrapper) {
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;  
+  padding: 0 $spacing--small 0 $spacing--small;
+  position: relative;
+  width: 100%;
+
+  img {
+    width: 33px;
+  }
+
+  p {
+    margin: auto 0 auto 15px;
+  }
+}
+
+:local(.subfeature) {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  right: 0;
+  width: 200px;
+  z-index: 1;
+}
+
+:local(.clickSubfeature) {
+  cursor: pointer;
+}

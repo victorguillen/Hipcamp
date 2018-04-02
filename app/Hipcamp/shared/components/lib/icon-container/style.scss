@@ -1,0 +1,50 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins/styling-helpers';
+
+:local(.feature) {
+  align-items: flex-start;
+  display: flex;
+  padding: 0 $spacing--small 0 $spacing--small;
+  width: 100%;
+
+  img {
+    width: 33px;
+  }
+
+  p {
+    margin: auto 0 auto 15px;
+  }
+}
+
+:local(.subfeature) {
+  img {
+    height: 33px;
+    width: 33px;
+  }
+}
+
+:local(.blur) {
+  color: $blur;
+  text-decoration: line-through;
+
+  img {
+    opacity: 0.5;
+    width: 33px;
+  }
+}
+
+:local(.greenMarker) {
+  @include colorMarker($green);
+}
+
+:local(.redMarker) {
+  @include colorMarker($red);
+}
+
+:local(.subfeatureGreenMarker) {
+  background-color: $green;
+}
+
+:local(.subfeatureRedMarker) {
+  background-color: $red;
+}
